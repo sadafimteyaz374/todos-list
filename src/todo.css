@@ -1,0 +1,23 @@
+.todos {
+  height: 600px;
+  width: 500px;
+  background-color: antiquewhite;
+  margin: 50px auto; /* horizontally center the box */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+li{
+    margin-right: 5px;
+    list-style-type: none;
+}
+button{
+  margin-left: 10px;
+  background-color: rgb(183, 55, 55);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
