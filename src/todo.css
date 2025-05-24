@@ -1,23 +1,75 @@
 .todos {
-  height: 600px;
+  height: auto;
+  max-height: 600px;
   width: 500px;
-  background-color: antiquewhite;
-  margin: 50px auto; /* horizontally center the box */
+  background-color: rgb(251, 233, 211);
+  margin: 50px auto;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: left;
+  border: 2px solid rgb(11, 11, 12);
+  overflow-y: auto;
 }
-li{
-    margin-right: 5px;
-    list-style-type: none;
+
+ul {
+  padding: 0;
+  margin: 20px 0;
 }
-button{
+
+li {
+  list-style-type: none;
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  height: 35px;
+  width: 470px;
+  padding: 0 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: rgb(2, 142, 49);
+}
+
+button {
   margin-left: 10px;
-  background-color: rgb(183, 55, 55);
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add {
+  background-color: rgb(2, 142, 49);
+  height: 35px;
+  width: 470px;
+}
+
+.add:hover {
+  background-color: rgb(1, 110, 38);
+}
+
+.del {
+  background-color: rgb(220, 49, 49);
+}
+
+.del:hover {
+  background-color: rgb(180, 30, 30);
 }
